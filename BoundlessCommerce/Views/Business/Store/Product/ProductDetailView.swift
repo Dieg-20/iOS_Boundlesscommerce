@@ -293,6 +293,6 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView( currentCategory: SelectedBusiness.Category(id: "", categoryName: "", hasImage: false, categoryChecked: false, categoryProducts: [SelectedBusiness.Category.Product]()), product: SelectedBusiness.Category.Product(id: "", images: [String](), productName: "", productPrice: 0.0, productDescription: "", quantity: 0, productVariants: [SelectedBusiness.Category.Product.Variants]()), aBusiness: Business(name: "", subscribtionActive: false, merchantActive: false, favorite: false))
+        ProductDetailView( currentCategory: SelectedBusiness.Category(id: "", categoryName: "", hasImage: false, categoryChecked: false, categoryProducts: [SelectedBusiness.Category.Product]()), product: SelectedBusiness.Category.Product(id: "", images: [String](), productName: "", productPrice: 0.0, productDescription: "", quantity: 0, productVariants: [SelectedBusiness.Category.Product.Variants]()), aBusiness: Business(id: "", name: "", subscribtionActive: false, merchantActive: false, favorite: false))
     }
 }

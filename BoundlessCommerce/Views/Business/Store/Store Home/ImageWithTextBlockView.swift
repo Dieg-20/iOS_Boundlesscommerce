@@ -53,7 +53,7 @@ struct ImageWithTextBlockView: View {
     
     func fetchImageWithTextImage() {
         let storage = Storage.storage()
-        guard let businessId = aBusiness.id else {return}
+        let businessId = aBusiness.id 
         let path = "\(businessId)/StoreStructure/\(blockId)"
 
         let imageReference = storage.reference(withPath: path)

@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
+import FirebaseFunctions
 
 struct AppView: View {
     
     @EnvironmentObject var businesses: Businesses
     @EnvironmentObject var selectedBusiness: theSelectedBusiness
     
-    let db = Firestore.firestore()
+    let functions = Functions.functions()
     
     var body: some View {
         NavigationView {
@@ -43,19 +43,32 @@ struct AppView: View {
     
     
     func fetchBusinessesIdentifiers() {
-
-        db.collection("Users").addSnapshotListener { (querySnapshot, error) in
-            guard let documents = querySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-            
-
-            self.businesses.businesses = documents.compactMap { (queryDocumentSnapshot) -> Business? in
-                return try? queryDocumentSnapshot.data(as: Business.self)
+        functions.httpsCallable("fetchBusinessesIdentifiers").call() { (result, error) in
+            if let error = error as NSError? {
+                print("Unable to get businesses identifiers")
+            } else {
+                print(result?.data)
+                
+                let decoder = JSONDecoder()
+                
+                let JSONresponse = """
+                    \(result!.data)
+                    """
+                let jsonData = Data(JSONresponse.utf8)
+                
+                do {
+                    let allBusinesses = try decoder.decode(BusinessesJSONresponse.self, from: jsonData)
+                    print("BUSINESSES:", businesses)
+                    businesses.businesses = allBusinesses.businessDocs
+                } catch {
+                    print(error)
+                }
+                
+                
             }
         }
     }
+    
 }
 
 struct AppView_Previews: PreviewProvider {

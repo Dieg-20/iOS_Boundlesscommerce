@@ -33,6 +33,6 @@ struct CategoryCarouselBlockView: View {
 
 struct CategoryCarouselBlockView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCarouselBlockView(blockId: "", aBusiness: Business(name: "", subscribtionActive: false, merchantActive: false, favorite: false))
+        CategoryCarouselBlockView(blockId: "", aBusiness: Business(id: "", name: "", subscribtionActive: false, merchantActive: false, favorite: false))
     }
 }

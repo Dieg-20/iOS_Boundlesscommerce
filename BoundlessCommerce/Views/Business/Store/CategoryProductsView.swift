@@ -29,6 +29,6 @@ struct CategoryProductsView: View {
 
 struct CategoryProductsView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryProductsView(category: SelectedBusiness.Category(id: "", categoryName: "", hasImage: false, categoryChecked: false, categoryProducts: [SelectedBusiness.Category.Product]()), aBusiness: Business(name: "", subscribtionActive: false, merchantActive: false, favorite: false) )
+        CategoryProductsView(category: SelectedBusiness.Category(id: "", categoryName: "", hasImage: false, categoryChecked: false, categoryProducts: [SelectedBusiness.Category.Product]()), aBusiness: Business(id: "", name: "", subscribtionActive: false, merchantActive: false, favorite: false) )
     }
 }

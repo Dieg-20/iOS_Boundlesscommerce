@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
 import FirebaseFunctions
 
 struct BusinessView: View {
     @EnvironmentObject var selectedBusiness: theSelectedBusiness
-    let db = Firestore.firestore()
+
     let functions = Functions.functions()
     
     var businessId: String
@@ -25,7 +24,6 @@ struct BusinessView: View {
                     fetchBusinessCategories()
                     fetchBusinessStoreStructure()
                     arrangeBusinessNameAndId()
-                    fetchClientToken()
                     fetchStoreTheme()
                 })
         }
@@ -57,83 +55,84 @@ func fetchClientToken() {
     
     
     func fetchBusinessCategories() {
-        if selectedBusiness.business.categories.count == 0 {
-        db.collection("Users").document(aBusiness.id ?? "").collection("Categories").getDocuments() { (querySnapshot, err) in
-            if let err = err{
-                print("Unable to get categories", err)
+        functions.httpsCallable("fetchBusinessCategories").call(["merchantAccountId": businessId]) { (result, error) in
+            if let error = error as NSError? {
+                print("Unable to fetch categories:", error.localizedDescription)
             } else {
-                for categoryDocument in querySnapshot!.documents {
-                    do {
-                        let category = try categoryDocument.data(as: SelectedBusiness.Category.self)
-                        selectedBusiness.business.categories.append(category ?? SelectedBusiness.Category(id: "", categoryName: "", hasImage: false, categoryChecked: false, categoryProducts: [SelectedBusiness.Category.Product]()))
-                        print("category succesfully converted")
-                        
-                        
-                        db.collection("Users").document(aBusiness.id ?? "" ).collection("Categories").document(categoryDocument.documentID).collection("Products").getDocuments() { (querySnapshot, err) in
-                            if let err = err{
-                                print("Unable to get categories", err)
+                let decoder = JSONDecoder()
+                
+                let JSONresponse = """
+                    \(result!.data)
+                    """
+                let jsonData = Data(JSONresponse.utf8)
+                
+                do {
+                    let allCategories = try decoder.decode(CategoriesJSONresponse.self, from: jsonData)
+                    selectedBusiness.business.categories = allCategories.categoryDocs
+                    
+                    for categoryIdx in selectedBusiness.business.categories.indices {
+                        functions.httpsCallable("fetchCategoryProducts").call(["merchantAccountId": businessId, "categoryId": selectedBusiness.business.categories[categoryIdx].id]) { (result, error) in
+                            if let error = error as NSError? {
+                                print("Unable to fetch category products:", error.localizedDescription)
                             } else {
-                                for productDocument in querySnapshot!.documents {
-                                    do {
-                                        let product = try productDocument.data(as:SelectedBusiness.Category.Product.self)
-                                        for categoryIdx in selectedBusiness.business.categories.indices {
-                                            if selectedBusiness.business.categories[categoryIdx].id == categoryDocument.documentID {
-                                                print("!!!!!!!!! FETCHED PRODUCT ID:", product!.id)
-                                                selectedBusiness.business.categories[categoryIdx].categoryProducts.append(product!)
-                                            }
-                                        }
-                                    }
-                                    catch {
-                                        print("Unable to convert to type Product", error)
-                                    }
+                                let decoder = JSONDecoder()
+                                
+                                let JSONresponse = """
+                                    \(result!.data)
+                                    """
+                                
+                                print("JSON RESPONSE:", result!.data )
+                                let jsonData = Data(JSONresponse.utf8)
+                                
+                                do {
+                                    let allProductsInCategory = try decoder.decode(CategoryProductsJSONresponse.self, from: jsonData)
+                                    selectedBusiness.business.categories[categoryIdx].categoryProducts = allProductsInCategory.productDocs
+                                    print("GETS HERE ---------------------------------------")
+                                    print(selectedBusiness.business.categories[categoryIdx].categoryProducts)
+                                } catch {
+                                    print("ERROR________________________")
+                                    print(error)
+                                    print("ERROR________________________")
                                 }
                             }
                         }
-                        
-                
-                    }
-                    catch {
-                        print("Unable to convert to type Category", error)
                     }
                     
-                   
-                    
+                } catch {
+                    print(error)
                 }
             }
         }
+    }
+    
+    func fetchBusinessStoreStructure() {
+        functions.httpsCallable("fetchBusinessStoreStructure").call(["merchantAccountId": businessId]) { (result, error) in
+            if let error = error as NSError? {
+                print("Unable to fetch categories:", error.localizedDescription)
+            } else {
+                let decoder = JSONDecoder()
+                
+                let JSONresponse = """
+                    \(result!.data)
+                    """
+                let jsonData = Data(JSONresponse.utf8)
+                
+                do {
+                    let allBlocks = try decoder.decode(StoreStructureJSONresponse.self, from: jsonData)
+                    selectedBusiness.storeHomeStructure.blocks = allBlocks.storeStructureDocs
+                } catch {
+                    print(error)
+                }
+            }
         }
     }
     
     func fetchStoreTheme() {
-        db.collection("Users").document(aBusiness.id ?? "").collection("StoreTheme").document("Colors").getDocument { (document, error) in
-            guard let document = document else {return}
-            do {
-                self.selectedBusiness.storeTheme = try document.data(as: SelectedBusiness.StoreTheme.self) ?? selectedBusiness.storeTheme
-            }
-            catch{
-                print("error")
-            }
-        
-        }
+
     }
 
     
-    func fetchBusinessStoreStructure() {
-        if selectedBusiness.storeHomeStructure.blocks.count == 0 {
-            db.collection("Users").document(businessId).collection("StoreStructure").order(by: "position").addSnapshotListener { (querySnapshot, error) in
-                guard let documents = querySnapshot?.documents else {
-                    print("no documents")
-                    return
-                }
-                
-                print("block documents:", documents.count)
-                
-                self.selectedBusiness.storeHomeStructure.blocks = documents.compactMap { (queryDocumentSnapshot) -> SelectedBusiness.StoreHomeStructure.Block? in
-                    return try? queryDocumentSnapshot.data(as: SelectedBusiness.StoreHomeStructure.Block.self)
-                }
-            }
-        }
-        }
+
 }
 
 struct BusinessView_Previews: PreviewProvider {

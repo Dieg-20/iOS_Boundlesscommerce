@@ -15,9 +15,14 @@ struct BoundlessCommerceApp: App {
         FirebaseApp.configure()
     }
     
+    var businesses = Businesses()
+    var selectedBusiness = theSelectedBusiness()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(businesses)
+                .environmentObject(selectedBusiness)
         }
     }
 }

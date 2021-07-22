@@ -45,6 +45,7 @@
 		F1FA203026A9E40A00429234 /* ImageWithTextBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA202F26A9E40A00429234 /* ImageWithTextBlockView.swift */; };
 		F1FA203226A9E41A00429234 /* ProductCarouselBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA203126A9E41A00429234 /* ProductCarouselBlockView.swift */; };
 		F1FA203426A9E42C00429234 /* ProductDisplayViewForProductCarouselBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA203326A9E42C00429234 /* ProductDisplayViewForProductCarouselBlockView.swift */; };
+		F1FA203626AA158C00429234 /* SelectedBusinessJSONresponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA203526AA158C00429234 /* SelectedBusinessJSONresponses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		F1FA202F26A9E40A00429234 /* ImageWithTextBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithTextBlockView.swift; sourceTree = "<group>"; };
 		F1FA203126A9E41A00429234 /* ProductCarouselBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCarouselBlockView.swift; sourceTree = "<group>"; };
 		F1FA203326A9E42C00429234 /* ProductDisplayViewForProductCarouselBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDisplayViewForProductCarouselBlockView.swift; sourceTree = "<group>"; };
+		F1FA203526AA158C00429234 /* SelectedBusinessJSONresponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBusinessJSONresponses.swift; sourceTree = "<group>"; };
 		F8069A1CFB4250628CA1075A /* Pods-BoundlessCommerce_AppClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce_AppClip.debug.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,8 +164,6 @@
 		F1FA1FC226A9D8C600429234 = {
 			isa = PBXGroup;
 			children = (
-				F1FA1FFB26A9E09A00429234 /* Models */,
-				F1FA1FFA26A9E08F00429234 /* Extensions */,
 				F1FA1FCD26A9D8C600429234 /* BoundlessCommerce */,
 				F1FA1FE226A9D8F600429234 /* BoundlessCommerce_AppClip */,
 				F1FA1FCC26A9D8C600429234 /* Products */,
@@ -184,6 +184,8 @@
 		F1FA1FCD26A9D8C600429234 /* BoundlessCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F1FA1FFB26A9E09A00429234 /* Models */,
+				F1FA1FFA26A9E08F00429234 /* Extensions */,
 				F1FA1FF926A9E08200429234 /* Views */,
 				F1FA1FCE26A9D8C600429234 /* BoundlessCommerceApp.swift */,
 				F1FA1FD226A9D8C600429234 /* Assets.xcassets */,
@@ -251,6 +253,7 @@
 			children = (
 				F1FA1FFC26A9E0B600429234 /* Business.swift */,
 				F1FA1FFE26A9E0E100429234 /* SelectedBusiness.swift */,
+				F1FA203526AA158C00429234 /* SelectedBusinessJSONresponses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				F1FA201326A9E24600429234 /* BusinessView.swift in Sources */,
 				F1FA203026A9E40A00429234 /* ImageWithTextBlockView.swift in Sources */,
 				F1FA1FFF26A9E0E100429234 /* SelectedBusiness.swift in Sources */,
+				F1FA203626AA158C00429234 /* SelectedBusinessJSONresponses.swift in Sources */,
 				F1FA202826A9E3AB00429234 /* ProductDetailCarouselImageView.swift in Sources */,
 				F1FA1FCF26A9D8C600429234 /* BoundlessCommerceApp.swift in Sources */,
 				F1FA203426A9E42C00429234 /* ProductDisplayViewForProductCarouselBlockView.swift in Sources */,

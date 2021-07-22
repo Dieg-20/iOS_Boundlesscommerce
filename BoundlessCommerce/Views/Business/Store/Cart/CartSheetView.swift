@@ -52,7 +52,7 @@ struct CartSheetView: View {
            
             ZStack {
  
-                NavigationLink(destination: CheckoutView()) {
+                NavigationLink(destination: Text("Checkout")) {
                     Text("Checkout")
                         .font(.title2)
                         .foregroundColor(Color.white)

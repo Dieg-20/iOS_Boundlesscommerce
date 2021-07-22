@@ -6,7 +6,6 @@ target 'BoundlessCommerce' do
   use_frameworks!
 
   # Pods for BoundlessCommerce
-pod 'FirebaseFirestoreSwift'
 pod 'Firebase/Storage'
 pod 'Firebase/Functions'
 pod 'Stripe'
@@ -18,7 +17,6 @@ target 'BoundlessCommerce_AppClip' do
   use_frameworks!
 
   # Pods for BoundlessCommerce_AppClip
-pod 'FirebaseFirestoreSwift'
 pod 'Firebase/Storage'
 pod 'Firebase/Functions'
 pod 'Stripe'

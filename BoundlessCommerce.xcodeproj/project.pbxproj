@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024BE3AA0F8FAE2F1A570F26 /* Pods_BoundlessCommerce_AppClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1003E4A49F09241C40F05A /* Pods_BoundlessCommerce_AppClip.framework */; };
+		D7CAE471F811184DD3910911 /* Pods_BoundlessCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F9ED104B369F4E11DF6A94 /* Pods_BoundlessCommerce.framework */; };
+		F1FA1FCF26A9D8C600429234 /* BoundlessCommerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA1FCE26A9D8C600429234 /* BoundlessCommerceApp.swift */; };
+		F1FA1FD126A9D8C600429234 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA1FD026A9D8C600429234 /* ContentView.swift */; };
+		F1FA1FD326A9D8C600429234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FD226A9D8C600429234 /* Assets.xcassets */; };
+		F1FA1FD626A9D8C600429234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FD526A9D8C600429234 /* Preview Assets.xcassets */; };
+		F1FA1FE426A9D8F600429234 /* BoundlessCommerce_AppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA1FE326A9D8F600429234 /* BoundlessCommerce_AppClipApp.swift */; };
+		F1FA1FE626A9D8F600429234 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA1FE526A9D8F600429234 /* ContentView.swift */; };
+		F1FA1FE826A9D8F600429234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FE726A9D8F600429234 /* Assets.xcassets */; };
+		F1FA1FEB26A9D8F600429234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FEA26A9D8F600429234 /* Preview Assets.xcassets */; };
+		F1FA1FF026A9D8F600429234 /* BoundlessCommerce_AppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = F1FA1FE126A9D8F600429234 /* BoundlessCommerce_AppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1FA1FF626A9DD5200429234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FF526A9DD5200429234 /* GoogleService-Info.plist */; };
+		F1FA1FF726A9DD5200429234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FF526A9DD5200429234 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1FA1FEE26A9D8F600429234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FA1FC326A9D8C600429234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FA1FE026A9D8F600429234;
+			remoteInfo = BoundlessCommerce_AppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1FA1FF426A9D8F600429234 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				F1FA1FF026A9D8F600429234 /* BoundlessCommerce_AppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AD679B6987D0AAFC23FD89D /* Pods-BoundlessCommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce.debug.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce/Pods-BoundlessCommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		2E1003E4A49F09241C40F05A /* Pods_BoundlessCommerce_AppClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoundlessCommerce_AppClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DA551B7BD8D75A7530EAA9 /* Pods-BoundlessCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce.release.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce/Pods-BoundlessCommerce.release.xcconfig"; sourceTree = "<group>"; };
+		84F9ED104B369F4E11DF6A94 /* Pods_BoundlessCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoundlessCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01269BC38FD8F12EB6CA604 /* Pods-BoundlessCommerce_AppClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce_AppClip.release.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip.release.xcconfig"; sourceTree = "<group>"; };
+		F1FA1FCB26A9D8C600429234 /* BoundlessCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoundlessCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FA1FCE26A9D8C600429234 /* BoundlessCommerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundlessCommerceApp.swift; sourceTree = "<group>"; };
+		F1FA1FD026A9D8C600429234 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1FA1FD226A9D8C600429234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FA1FD526A9D8C600429234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1FA1FD726A9D8C600429234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FA1FE126A9D8F600429234 /* BoundlessCommerce_AppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoundlessCommerce_AppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FA1FE326A9D8F600429234 /* BoundlessCommerce_AppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundlessCommerce_AppClipApp.swift; sourceTree = "<group>"; };
+		F1FA1FE526A9D8F600429234 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1FA1FE726A9D8F600429234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FA1FEA26A9D8F600429234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1FA1FEC26A9D8F600429234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FA1FED26A9D8F600429234 /* BoundlessCommerce_AppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoundlessCommerce_AppClip.entitlements; sourceTree = "<group>"; };
+		F1FA1FF526A9DD5200429234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8069A1CFB4250628CA1075A /* Pods-BoundlessCommerce_AppClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce_AppClip.debug.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1FA1FC826A9D8C600429234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CAE471F811184DD3910911 /* Pods_BoundlessCommerce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA1FDE26A9D8F600429234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024BE3AA0F8FAE2F1A570F26 /* Pods_BoundlessCommerce_AppClip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007F0B96D292C7C4CFE2EFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F9ED104B369F4E11DF6A94 /* Pods_BoundlessCommerce.framework */,
+				2E1003E4A49F09241C40F05A /* Pods_BoundlessCommerce_AppClip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A921665FA8941D729B94EA4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AD679B6987D0AAFC23FD89D /* Pods-BoundlessCommerce.debug.xcconfig */,
+				64DA551B7BD8D75A7530EAA9 /* Pods-BoundlessCommerce.release.xcconfig */,
+				F8069A1CFB4250628CA1075A /* Pods-BoundlessCommerce_AppClip.debug.xcconfig */,
+				D01269BC38FD8F12EB6CA604 /* Pods-BoundlessCommerce_AppClip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1FA1FC226A9D8C600429234 = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FCD26A9D8C600429234 /* BoundlessCommerce */,
+				F1FA1FE226A9D8F600429234 /* BoundlessCommerce_AppClip */,
+				F1FA1FCC26A9D8C600429234 /* Products */,
+				A921665FA8941D729B94EA4C /* Pods */,
+				007F0B96D292C7C4CFE2EFD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1FA1FCC26A9D8C600429234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FCB26A9D8C600429234 /* BoundlessCommerce.app */,
+				F1FA1FE126A9D8F600429234 /* BoundlessCommerce_AppClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1FA1FCD26A9D8C600429234 /* BoundlessCommerce */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FCE26A9D8C600429234 /* BoundlessCommerceApp.swift */,
+				F1FA1FD026A9D8C600429234 /* ContentView.swift */,
+				F1FA1FD226A9D8C600429234 /* Assets.xcassets */,
+				F1FA1FF526A9DD5200429234 /* GoogleService-Info.plist */,
+				F1FA1FD726A9D8C600429234 /* Info.plist */,
+				F1FA1FD426A9D8C600429234 /* Preview Content */,
+			);
+			path = BoundlessCommerce;
+			sourceTree = "<group>";
+		};
+		F1FA1FD426A9D8C600429234 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FD526A9D8C600429234 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1FA1FE226A9D8F600429234 /* BoundlessCommerce_AppClip */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FE326A9D8F600429234 /* BoundlessCommerce_AppClipApp.swift */,
+				F1FA1FE526A9D8F600429234 /* ContentView.swift */,
+				F1FA1FE726A9D8F600429234 /* Assets.xcassets */,
+				F1FA1FEC26A9D8F600429234 /* Info.plist */,
+				F1FA1FED26A9D8F600429234 /* BoundlessCommerce_AppClip.entitlements */,
+				F1FA1FE926A9D8F600429234 /* Preview Content */,
+			);
+			path = BoundlessCommerce_AppClip;
+			sourceTree = "<group>";
+		};
+		F1FA1FE926A9D8F600429234 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA1FEA26A9D8F600429234 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1FA1FCA26A9D8C600429234 /* BoundlessCommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FA1FDA26A9D8C600429234 /* Build configuration list for PBXNativeTarget "BoundlessCommerce" */;
+			buildPhases = (
+				5F6F7F37AB6E1AEF929FCE97 /* [CP] Check Pods Manifest.lock */,
+				F1FA1FC726A9D8C600429234 /* Sources */,
+				F1FA1FC826A9D8C600429234 /* Frameworks */,
+				F1FA1FC926A9D8C600429234 /* Resources */,
+				F1FA1FF426A9D8F600429234 /* Embed App Clips */,
+				769D442E5674D3338D1D89B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FA1FEF26A9D8F600429234 /* PBXTargetDependency */,
+			);
+			name = BoundlessCommerce;
+			productName = BoundlessCommerce;
+			productReference = F1FA1FCB26A9D8C600429234 /* BoundlessCommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1FA1FE026A9D8F600429234 /* BoundlessCommerce_AppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FA1FF126A9D8F600429234 /* Build configuration list for PBXNativeTarget "BoundlessCommerce_AppClip" */;
+			buildPhases = (
+				5667D4FEDC95BA24C26C63AC /* [CP] Check Pods Manifest.lock */,
+				F1FA1FDD26A9D8F600429234 /* Sources */,
+				F1FA1FDE26A9D8F600429234 /* Frameworks */,
+				F1FA1FDF26A9D8F600429234 /* Resources */,
+				9BE3DE504D7F19B945704D54 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoundlessCommerce_AppClip;
+			productName = BoundlessCommerce_AppClip;
+			productReference = F1FA1FE126A9D8F600429234 /* BoundlessCommerce_AppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1FA1FC326A9D8C600429234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F1FA1FCA26A9D8C600429234 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F1FA1FE026A9D8F600429234 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F1FA1FC626A9D8C600429234 /* Build configuration list for PBXProject "BoundlessCommerce" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1FA1FC226A9D8C600429234;
+			productRefGroup = F1FA1FCC26A9D8C600429234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1FA1FCA26A9D8C600429234 /* BoundlessCommerce */,
+				F1FA1FE026A9D8F600429234 /* BoundlessCommerce_AppClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1FA1FC926A9D8C600429234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA1FD626A9D8C600429234 /* Preview Assets.xcassets in Resources */,
+				F1FA1FD326A9D8C600429234 /* Assets.xcassets in Resources */,
+				F1FA1FF626A9DD5200429234 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA1FDF26A9D8F600429234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA1FEB26A9D8F600429234 /* Preview Assets.xcassets in Resources */,
+				F1FA1FE826A9D8F600429234 /* Assets.xcassets in Resources */,
+				F1FA1FF726A9DD5200429234 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5667D4FEDC95BA24C26C63AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoundlessCommerce_AppClip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F6F7F37AB6E1AEF929FCE97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoundlessCommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769D442E5674D3338D1D89B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce/Pods-BoundlessCommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce/Pods-BoundlessCommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce/Pods-BoundlessCommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE3DE504D7F19B945704D54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1FA1FC726A9D8C600429234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA1FD126A9D8C600429234 /* ContentView.swift in Sources */,
+				F1FA1FCF26A9D8C600429234 /* BoundlessCommerceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA1FDD26A9D8F600429234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA1FE626A9D8F600429234 /* ContentView.swift in Sources */,
+				F1FA1FE426A9D8F600429234 /* BoundlessCommerce_AppClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1FA1FEF26A9D8F600429234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FA1FE026A9D8F600429234 /* BoundlessCommerce_AppClip */;
+			targetProxy = F1FA1FEE26A9D8F600429234 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1FA1FD826A9D8C600429234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1FA1FD926A9D8C600429234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1FA1FDB26A9D8C600429234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD679B6987D0AAFC23FD89D /* Pods-BoundlessCommerce.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoundlessCommerce/Preview Content\"";
+				DEVELOPMENT_TEAM = VAP2637Y2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoundlessCommerce/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.BoundlessCommerce.BoundlessCommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1FA1FDC26A9D8C600429234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DA551B7BD8D75A7530EAA9 /* Pods-BoundlessCommerce.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoundlessCommerce/Preview Content\"";
+				DEVELOPMENT_TEAM = VAP2637Y2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoundlessCommerce/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.BoundlessCommerce.BoundlessCommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1FA1FF226A9D8F600429234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8069A1CFB4250628CA1075A /* Pods-BoundlessCommerce_AppClip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoundlessCommerce_AppClip/BoundlessCommerce_AppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoundlessCommerce_AppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = VAP2637Y2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoundlessCommerce_AppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.BoundlessCommerce.BoundlessCommerce.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1FA1FF326A9D8F600429234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01269BC38FD8F12EB6CA604 /* Pods-BoundlessCommerce_AppClip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BoundlessCommerce_AppClip/BoundlessCommerce_AppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BoundlessCommerce_AppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = VAP2637Y2A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BoundlessCommerce_AppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.BoundlessCommerce.BoundlessCommerce.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1FA1FC626A9D8C600429234 /* Build configuration list for PBXProject "BoundlessCommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA1FD826A9D8C600429234 /* Debug */,
+				F1FA1FD926A9D8C600429234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FA1FDA26A9D8C600429234 /* Build configuration list for PBXNativeTarget "BoundlessCommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA1FDB26A9D8C600429234 /* Debug */,
+				F1FA1FDC26A9D8C600429234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FA1FF126A9D8F600429234 /* Build configuration list for PBXNativeTarget "BoundlessCommerce_AppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA1FF226A9D8F600429234 /* Debug */,
+				F1FA1FF326A9D8F600429234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1FA1FC326A9D8C600429234 /* Project object */;
+}

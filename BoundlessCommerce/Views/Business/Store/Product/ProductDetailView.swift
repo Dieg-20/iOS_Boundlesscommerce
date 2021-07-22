@@ -260,6 +260,7 @@ struct ProductDetailView: View {
             .sheet(isPresented: $showingAddToCartSheet) {
                 NavigationView {
                     CartSheetView()
+                        .environmentObject(selectedBusiness)
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
                 }

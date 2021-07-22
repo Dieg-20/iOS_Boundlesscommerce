@@ -35,26 +35,14 @@ struct BusinessView: View {
         selectedBusiness.business.name = businessName
     }
     
-func fetchClientToken() {
-    if selectedBusiness.businessAppClientToken == "none" {
-        functions.httpsCallable("createAppClientToken").call(["merchantAccountId" : businessId]) { (result, error) in
-            if let error = error as NSError? {
-                print("Unable to generate app client token:", error)
-            } else {
-                if let data = (result?.data as? [String: String]) {
-                    print("DATA:", data)
-                    selectedBusiness.businessAppClientToken = data["appClientToken"] ?? ""
-                } else {
-                    print("Unable to convert data", error)
-                    print(result)
-                }
-            }
-        }
-    }
-    }
-    
     
     func fetchBusinessCategories() {
+        if selectedBusiness.storeHomeStructure.blocks.count != 0 {
+            selectedBusiness.business = SelectedBusiness(id: "", name: "", mainColor: "", productCartButtonColor: "", categories: [SelectedBusiness.Category]())
+            
+            selectedBusiness.business.id = businessId
+            selectedBusiness.business.name = businessName
+        }
         functions.httpsCallable("fetchBusinessCategories").call(["merchantAccountId": businessId]) { (result, error) in
             if let error = error as NSError? {
                 print("Unable to fetch categories:", error.localizedDescription)
@@ -106,6 +94,9 @@ func fetchClientToken() {
     }
     
     func fetchBusinessStoreStructure() {
+        if selectedBusiness.storeHomeStructure.blocks.count != 0 {
+            selectedBusiness.storeHomeStructure = SelectedBusiness.StoreHomeStructure(id: "", blocks: [SelectedBusiness.StoreHomeStructure.Block]())
+        }
         functions.httpsCallable("fetchBusinessStoreStructure").call(["merchantAccountId": businessId]) { (result, error) in
             if let error = error as NSError? {
                 print("Unable to fetch categories:", error.localizedDescription)

@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import FirebaseFunctions
 
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        AppView()
+        NavigationView {
+            AllBusinessesList()
+                .onAppear(perform: {
+                    if businesses.businesses.count == 0 {
+                        fetchBusinessesIdentifiers()
+                    }
+                    selectedBusiness.storeTheme.mainColor = "000000"
+                })
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

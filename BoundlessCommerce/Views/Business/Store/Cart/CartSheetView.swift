@@ -16,42 +16,45 @@ struct CartSheetView: View {
     @State var nonce = ""
     
     @State var showBraintreeDropIn = false
-
+    
     var body: some View {
-
+        
         VStack {
             HStack {
-            Button(action: {
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Image(systemName: "xmark")
-                Text("Back")
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "xmark")
+                    Text("Back")
+                }
+                .padding()
+                
+                Spacer()
+                
+                Text("Cart")
+                    .font(.title)
+                    .fontWeight(.medium)
+                
+                Spacer()
             }
-            .padding()
-                
-                Spacer()
-            
-            Text("Cart")
-                .font(.title)
-                .fontWeight(.medium)
-                
-                Spacer()
-        }
+            .onAppear(perform: {
+                calculateOrderTotal()
+            })
             
             Spacer()
-                List {
-                    Section{
-                        ForEach(selectedBusiness.order.orderProducts, id: \.self) { orderProduct in
-                            ProductDisplayViewCartVersion(orderProduct: orderProduct)
-                        }
-                        .onDelete(perform: deleteOrderProduct)
+            List {
+                Section{
+                    ForEach(selectedBusiness.order.orderProducts, id: \.self) { orderProduct in
+                        ProductDisplayViewCartVersion(orderProduct: orderProduct)
                     }
+                    .onDelete(perform: deleteOrderProduct)
                 }
+            }
             Text("Total: \(selectedBusiness.order.total, specifier: "%.2f")")
             
-           
+            
             ZStack {
- 
+                
                 NavigationLink(destination: Text("Checkout")) {
                     Text("Checkout")
                         .font(.title2)
@@ -61,19 +64,15 @@ struct CartSheetView: View {
                         .frame(width: UIScreen.main.bounds.width/1.2, height: UIScreen.main.bounds.height/16, alignment: .center)
                         .background(Color(.black))
                 }
-
+                
             }
         }
-            Spacer()
-        
-
-        .accentColor(Color(UIColor(selectedBusiness.storeTheme.mainColor ?? "000000") ?? UIColor(.green)))
-        
-        
-        .onAppear(perform: {
-            calculateOrderTotal()
-        })
+        Spacer()
+            
+            
+            .accentColor(Color(UIColor(selectedBusiness.storeTheme.mainColor ?? "000000") ?? UIColor(.green)))
     }
+    
     
     func deleteOrderProduct(at offsets: IndexSet) {
         selectedBusiness.order.orderProducts.remove(atOffsets: offsets)

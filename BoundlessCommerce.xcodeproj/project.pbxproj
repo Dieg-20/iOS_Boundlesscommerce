@@ -68,6 +68,10 @@
 		F1FA204A26AA35C700429234 /* ProductDisplayViewCartVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA202126A9E36A00429234 /* ProductDisplayViewCartVersion.swift */; };
 		F1FA204B26AA35DB00429234 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA200026A9E10D00429234 /* HexColor.swift */; };
 		F1FA204C26AA363D00429234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA1FD226A9D8C600429234 /* Assets.xcassets */; };
+		F1FA204E26AA3A7C00429234 /* StripeBackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA204D26AA3A7C00429234 /* StripeBackendModel.swift */; };
+		F1FA204F26AA3A7C00429234 /* StripeBackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA204D26AA3A7C00429234 /* StripeBackendModel.swift */; };
+		F1FA205126AA3FAE00429234 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA205026AA3FAE00429234 /* CardView.swift */; };
+		F1FA205226AA3FAE00429234 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA205026AA3FAE00429234 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +144,8 @@
 		F1FA203126A9E41A00429234 /* ProductCarouselBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCarouselBlockView.swift; sourceTree = "<group>"; };
 		F1FA203326A9E42C00429234 /* ProductDisplayViewForProductCarouselBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDisplayViewForProductCarouselBlockView.swift; sourceTree = "<group>"; };
 		F1FA203526AA158C00429234 /* SelectedBusinessJSONresponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBusinessJSONresponses.swift; sourceTree = "<group>"; };
+		F1FA204D26AA3A7C00429234 /* StripeBackendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeBackendModel.swift; sourceTree = "<group>"; };
+		F1FA205026AA3FAE00429234 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F8069A1CFB4250628CA1075A /* Pods-BoundlessCommerce_AppClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoundlessCommerce_AppClip.debug.xcconfig"; path = "Target Support Files/Pods-BoundlessCommerce_AppClip/Pods-BoundlessCommerce_AppClip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +282,7 @@
 				F1FA1FFC26A9E0B600429234 /* Business.swift */,
 				F1FA1FFE26A9E0E100429234 /* SelectedBusiness.swift */,
 				F1FA203526AA158C00429234 /* SelectedBusinessJSONresponses.swift */,
+				F1FA204D26AA3A7C00429234 /* StripeBackendModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,6 +322,7 @@
 		F1FA201B26A9E30C00429234 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
+				F1FA205026AA3FAE00429234 /* CardView.swift */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";
@@ -544,6 +552,7 @@
 				F1FA201526A9E28200429234 /* BusinessHomeView.swift in Sources */,
 				F1FA202C26A9E3E600429234 /* CategoryCarouselBlockView.swift in Sources */,
 				F1FA202E26A9E3F700429234 /* CategoryDisplayView.swift in Sources */,
+				F1FA205126AA3FAE00429234 /* CardView.swift in Sources */,
 				F1FA200926A9E1A700429234 /* AllBusinessesList.swift in Sources */,
 				F1FA1FFD26A9E0B600429234 /* Business.swift in Sources */,
 				F1FA1FD126A9D8C600429234 /* ContentView.swift in Sources */,
@@ -555,6 +564,7 @@
 				F1FA200326A9E15D00429234 /* AppView.swift in Sources */,
 				F1FA200E26A9E1EF00429234 /* FavoriteBusinessCardView.swift in Sources */,
 				F1FA202226A9E36A00429234 /* ProductDisplayViewCartVersion.swift in Sources */,
+				F1FA204E26AA3A7C00429234 /* StripeBackendModel.swift in Sources */,
 				F1FA201826A9E2B000429234 /* CategoryProductsView.swift in Sources */,
 				F1FA200126A9E10D00429234 /* HexColor.swift in Sources */,
 				F1FA202026A9E34E00429234 /* CartSheetView.swift in Sources */,
@@ -586,8 +596,10 @@
 				F1FA204326AA35B800429234 /* CategoryCarouselBlockView.swift in Sources */,
 				F1FA203826AA2ED900429234 /* Business.swift in Sources */,
 				F1FA204126AA35B800429234 /* ImageWithTextBlockView.swift in Sources */,
+				F1FA204F26AA3A7C00429234 /* StripeBackendModel.swift in Sources */,
 				F1FA204026AA35B800429234 /* BannerBlockView.swift in Sources */,
 				F1FA203E26AA35A900429234 /* CategoryProductsView.swift in Sources */,
+				F1FA205226AA3FAE00429234 /* CardView.swift in Sources */,
 				F1FA204226AA35B800429234 /* CategoryDisplayView.swift in Sources */,
 				F1FA203F26AA35AC00429234 /* CategoryProductDisplayView.swift in Sources */,
 				F1FA203926AA2ED900429234 /* SelectedBusinessJSONresponses.swift in Sources */,
